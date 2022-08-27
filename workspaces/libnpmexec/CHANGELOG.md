@@ -1,5 +1,48 @@
 # Changelog
 
+## [4.0.12](https://github.com/OmriBarZik/cli/compare/libnpmexec-v4.0.11...libnpmexec-v4.0.12) (2022-08-27)
+
+
+### Bug Fixes
+
+* don't prompt on `npm exec [directory]` ([#5298](https://github.com/OmriBarZik/cli/issues/5298)) ([6eba131](https://github.com/OmriBarZik/cli/commit/6eba13164d84efb34554c7dddeb2dbfed063ac0a))
+* **exec:** workspaces support ([6253d19](https://github.com/OmriBarZik/cli/commit/6253d1968d8390ea6b16604ff3abb5e6509349c9))
+* fix exec tests and  clean up workspace-location-msg ([3b30af2](https://github.com/OmriBarZik/cli/commit/3b30af25e93665f5aa21897910a65d7f26bbd066))
+* ignore global prefix if --prefix is used ([#5291](https://github.com/OmriBarZik/cli/issues/5291)) ([daaf461](https://github.com/OmriBarZik/cli/commit/daaf4619c85ecf62346770735cfa8e2ddecbef8b))
+* **libnpmexec:** fix bug not install latest pkg ([#4929](https://github.com/OmriBarZik/cli/issues/4929)) ([fcc72dd](https://github.com/OmriBarZik/cli/commit/fcc72dd8791187f4b3d8705fb23c2744c83ef943))
+* **libnpmexec:** fix read mixed local/registry pkg ([4a46a27](https://github.com/OmriBarZik/cli/commit/4a46a27f2b968e2f8c1f4821508f93013738c482))
+* look up local command bins from local tree ([#5273](https://github.com/OmriBarZik/cli/issues/5273)) ([c992fd6](https://github.com/OmriBarZik/cli/commit/c992fd6757505974dc8e92a9e2886d2233e098eb))
+* npm exec does not use script-shell option to run commands ([#5297](https://github.com/OmriBarZik/cli/issues/5297)) ([e5a9162](https://github.com/OmriBarZik/cli/commit/e5a9162a9dae9471e1ea77ad38baa02bb8d9852e))
+* only try to run global bin if the bin name exists ([#5253](https://github.com/OmriBarZik/cli/issues/5253)) ([95ae9f2](https://github.com/OmriBarZik/cli/commit/95ae9f2e2555ef592777399bf8fee5206d77f41d))
+* properly find and run global scoped packages ([#5250](https://github.com/OmriBarZik/cli/issues/5250)) ([19a8346](https://github.com/OmriBarZik/cli/commit/19a834610d154f36748536b27aed13bfdb5ee748))
+* properly find locally/globally/npxCache packages ([ea44995](https://github.com/OmriBarZik/cli/commit/ea449954844f21abbf984e09e421f0e03485a535))
+* update readme badges ([#4658](https://github.com/OmriBarZik/cli/issues/4658)) ([2829cb2](https://github.com/OmriBarZik/cli/commit/2829cb28a432b5ff7beeeb3bf3e7e2e174c1121d))
+* use binPaths ([19f1497](https://github.com/OmriBarZik/cli/commit/19f1497322411f1566885bd53e63dc39f0df27ea))
+
+
+### Dependencies
+
+* @npmcli/eslint-config@3.1.0 ([8ab12dc](https://github.com/OmriBarZik/cli/commit/8ab12dc32b26db770b868cf694cedab38f4e7460))
+* @npmcli/run-script@4.1.0 ([2c06cee](https://github.com/OmriBarZik/cli/commit/2c06ceee82dd813c0ae84cc0b09e6941cfc5533e))
+* @npmcli/run-script@4.1.3 ([#5064](https://github.com/OmriBarZik/cli/issues/5064)) ([f59a114](https://github.com/OmriBarZik/cli/commit/f59a114ffe3d1f86ccb2e52a4432292ab76852cc))
+* @npmcli/run-script@4.2.0 ([d0be9a2](https://github.com/OmriBarZik/cli/commit/d0be9a2bb53e74b30e13751afd1f6924990c8422))
+* @npmcli/template-oss@3.2.1 ([aac01b8](https://github.com/OmriBarZik/cli/commit/aac01b89caf6336a2eb34d696296303cdadd5c08))
+* @npmcli/template-oss@3.2.2 ([#4639](https://github.com/OmriBarZik/cli/issues/4639)) ([a59fd2c](https://github.com/OmriBarZik/cli/commit/a59fd2cb863245fce56f96c90ac854e62c5c4d6f))
+* add @npmcli/fs@2.1.1 ([c18dbc4](https://github.com/OmriBarZik/cli/commit/c18dbc4393491e02532d698351747307848d2e20))
+* add semver@7.3.7 ([cd6bafd](https://github.com/OmriBarZik/cli/commit/cd6bafdfbbd7a054709c11850b58f7dbc26eb8da))
+* bin-links@3.0.3 ([7fbf6f7](https://github.com/OmriBarZik/cli/commit/7fbf6f7825f76906ecdec79ab15595f9e2f7b784))
+* libnpmexec@4.0.10 ([8d870c5](https://github.com/OmriBarZik/cli/commit/8d870c56eed20f352695c3c06be07a656ada4ba7))
+* libnpmexec@4.0.11 ([8460ccf](https://github.com/OmriBarZik/cli/commit/8460ccf8de0744e9b7228af682bbeb2eebb00e98))
+* libnpmexec@4.0.3 ([df92e23](https://github.com/OmriBarZik/cli/commit/df92e23af63ca07bb4c261abd7365530529d3fd2))
+* libnpmexec@4.0.5 ([b1b6948](https://github.com/OmriBarZik/cli/commit/b1b69487637ce99192dc930257eebae9eed4fe7f))
+* libnpmexec@4.0.6 ([0886f7f](https://github.com/OmriBarZik/cli/commit/0886f7fa5ac641137052782698407ada230c611c))
+* libnpmexec@4.0.7 ([14a08d6](https://github.com/OmriBarZik/cli/commit/14a08d6ceb57130a2e4bdbad74ebf4944c92890e))
+* libnpmexec@4.0.8 ([9f94049](https://github.com/OmriBarZik/cli/commit/9f94049f058687b916da726ea625b5fa68d0829d))
+* libnpmexec@4.0.9 ([4b7b48b](https://github.com/OmriBarZik/cli/commit/4b7b48befdca90e0114f4c64eac1d96fea1cc191))
+* npmlog@6.0.2 ([5e31322](https://github.com/OmriBarZik/cli/commit/5e313223100db1207818d756b081eaba3468b273))
+* pacote@13.6.1 ([2e50cb8](https://github.com/OmriBarZik/cli/commit/2e50cb83e84cf25fee93ba0ca5a0343fbdb33c41))
+* unique-filename@2.0.1 ([1286f03](https://github.com/OmriBarZik/cli/commit/1286f03fe73dee9a447b13b662f0c5622ab6ec9e))
+
 ## [4.0.11](https://github.com/npm/cli/compare/libnpmexec-v4.0.10...libnpmexec-v4.0.11) (2022-08-17)
 
 
