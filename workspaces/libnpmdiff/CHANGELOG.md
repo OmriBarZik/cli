@@ -1,5 +1,27 @@
 # Changelog
 
+## [4.0.5](https://github.com/OmriBarZik/cli/compare/libnpmdiff-v4.0.4...libnpmdiff-v4.0.5) (2022-08-27)
+
+
+### Bug Fixes
+
+* replace deprecated String.prototype.substr() ([#4667](https://github.com/OmriBarZik/cli/issues/4667)) ([e3da5df](https://github.com/OmriBarZik/cli/commit/e3da5df4152fbe547f7871547165328e1bf06262))
+* update readme badges ([#4658](https://github.com/OmriBarZik/cli/issues/4658)) ([2829cb2](https://github.com/OmriBarZik/cli/commit/2829cb28a432b5ff7beeeb3bf3e7e2e174c1121d))
+
+
+### Dependencies
+
+* @npmcli/disparity-colors@2.0.0 ([f86f1af](https://github.com/OmriBarZik/cli/commit/f86f1af636f39d7d30a97873bbb6652416f68013))
+* @npmcli/eslint-config@3.1.0 ([8ab12dc](https://github.com/OmriBarZik/cli/commit/8ab12dc32b26db770b868cf694cedab38f4e7460))
+* @npmcli/template-oss@3.2.1 ([aac01b8](https://github.com/OmriBarZik/cli/commit/aac01b89caf6336a2eb34d696296303cdadd5c08))
+* @npmcli/template-oss@3.2.2 ([#4639](https://github.com/OmriBarZik/cli/issues/4639)) ([a59fd2c](https://github.com/OmriBarZik/cli/commit/a59fd2cb863245fce56f96c90ac854e62c5c4d6f))
+* diff@5.1.0 ([f4205e5](https://github.com/OmriBarZik/cli/commit/f4205e57d6c4ee5f2ff7d21ffc116ffc420d191e))
+* libnpmdiff@4.0.3 ([baff482](https://github.com/OmriBarZik/cli/commit/baff4828f733efee0a569e00f87d25f06f2b384b))
+* libnpmdiff@4.0.4 ([afa10c7](https://github.com/OmriBarZik/cli/commit/afa10c747e44bc6fa12cfeb3ece7a8e25ac4beae))
+* minimatch@5.0.1 ([1b30c72](https://github.com/OmriBarZik/cli/commit/1b30c725ecd0f03f55e3c0576962972748eec238))
+* pacote@13.6.1 ([2e50cb8](https://github.com/OmriBarZik/cli/commit/2e50cb83e84cf25fee93ba0ca5a0343fbdb33c41))
+* unique-filename@2.0.1 ([1286f03](https://github.com/OmriBarZik/cli/commit/1286f03fe73dee9a447b13b662f0c5622ab6ec9e))
+
 ## [4.0.4](https://github.com/npm/cli/compare/libnpmdiff-v4.0.3...libnpmdiff-v4.0.4) (2022-06-22)
 
 
