@@ -1,5 +1,87 @@
 # Changelog
 
+## [5.7.0](https://github.com/OmriBarZik/cli/compare/arborist-v5.6.0...arborist-v5.7.0) (2022-08-27)
+
+
+### Features
+
+* add --replace-registry-host=<npmjs|always|never> ([#4860](https://github.com/OmriBarZik/cli/issues/4860)) ([703dbbf](https://github.com/OmriBarZik/cli/commit/703dbbf2a8149dff72c848d60600889a76779828))
+* add --replace-registry-host=<npmjs|always|never>|<hostname> ([703dbbf](https://github.com/OmriBarZik/cli/commit/703dbbf2a8149dff72c848d60600889a76779828))
+* add flag --omit-lockfile-registry-resolved ([#4874](https://github.com/OmriBarZik/cli/issues/4874)) ([bfb8bcc](https://github.com/OmriBarZik/cli/commit/bfb8bccbe83753e527b43c8a3889696087dbe8f1))
+* add npm query cmd ([#5000](https://github.com/OmriBarZik/cli/issues/5000)) ([3c024ac](https://github.com/OmriBarZik/cli/commit/3c024ace60904c69e61da00e1fb56c0c1735804a))
+* **arborist:** add :overridden pseudo selector ([d221f72](https://github.com/OmriBarZik/cli/commit/d221f72c00e13258469a748227a1d6f9953a5948))
+* **arborist:** add option to forcibly skip loading a virtual tree ([96b6781](https://github.com/OmriBarZik/cli/commit/96b6781086143d7285c2c5bf7808c24b2c87e4dd))
+* **arborist:** add overridden getter to Node class ([e6d4304](https://github.com/OmriBarZik/cli/commit/e6d4304bbd03e38dcf2c7467bb1e61b5740a4c73))
+* **arborist:** add support for dependencies script ([#5094](https://github.com/OmriBarZik/cli/issues/5094)) ([e9b4214](https://github.com/OmriBarZik/cli/commit/e9b4214e1ddb1ad79fe6826cf2ce7ba385f0c274))
+* **arborist:** add support for installLinks ([0ebadf5](https://github.com/OmriBarZik/cli/commit/0ebadf5b603368557e9e837a46ea5c59c2677a81))
+* **query:** support :overridden pseudo selector ([0d4ed0f](https://github.com/OmriBarZik/cli/commit/0d4ed0fb1cd86edd827cac0b5367b73bb864a9bf))
+
+
+### Bug Fixes
+
+* Add space to SemVer log message ([#5042](https://github.com/OmriBarZik/cli/issues/5042)) ([e03009f](https://github.com/OmriBarZik/cli/commit/e03009f4b423e85e498f1b1851fae785de91a73d))
+* allow hash character in paths ([#5122](https://github.com/OmriBarZik/cli/issues/5122)) ([62b95a0](https://github.com/OmriBarZik/cli/commit/62b95a04337661e3fa17093708b57000054442d9))
+* **arborist:** dont skip adding advisories to audit based on name/range ([aa4a4da](https://github.com/OmriBarZik/cli/commit/aa4a4da336a6ec1963394fdbd06acb173c842d26)), closes [#4681](https://github.com/OmriBarZik/cli/issues/4681)
+* **arborist:** fix bare attribute queries ([#5248](https://github.com/OmriBarZik/cli/issues/5248)) ([8233fca](https://github.com/OmriBarZik/cli/commit/8233fca44321186c485964d26aa3c7c43eafff3d))
+* **arborist:** handle link nodes in old lockfiles correctly ([6f9cb49](https://github.com/OmriBarZik/cli/commit/6f9cb490e7299976c43c6a118036c130671fe188))
+* **arborist:** identify and repair invalid nodes in the virtual tree ([bd96ae4](https://github.com/OmriBarZik/cli/commit/bd96ae4071f9cc8a65e741f414db12e98537971d))
+* **arborist:** link deps lifecycle scripts ([#4875](https://github.com/OmriBarZik/cli/issues/4875)) ([5a50762](https://github.com/OmriBarZik/cli/commit/5a50762faa37ae5964ae6f12595b20b367056c0a))
+* **arborist:** make sure resolveParent exists before checking props ([18b8b94](https://github.com/OmriBarZik/cli/commit/18b8b94357d8f57301fbaa0f1e5dc2cf1128bf3e))
+* **arborist:** pass the edge to fromPath in order to determine correct path ([#5233](https://github.com/OmriBarZik/cli/issues/5233)) ([050284d](https://github.com/OmriBarZik/cli/commit/050284d2abb6aa91a0f9ffad5b0c4f074e5dbf6d))
+* **arborist:** use rawSpec for bundled and shrinkwrapped deps ([#4963](https://github.com/OmriBarZik/cli/issues/4963)) ([646b6b5](https://github.com/OmriBarZik/cli/commit/646b6b5d05de937beb8202e5fd8b8daf3e58e902))
+* **arborist:** use the sourceReference root rather than the node root for overrides ([#5227](https://github.com/OmriBarZik/cli/issues/5227)) ([47cc95d](https://github.com/OmriBarZik/cli/commit/47cc95d9ffb37fc8ff62a1d5554eab16d303aa43)), closes [#4395](https://github.com/OmriBarZik/cli/issues/4395)
+* **arborist:** when reloading an edge, also refresh overrides ([4d676e3](https://github.com/OmriBarZik/cli/commit/4d676e31a68f081b8553eff4e79db1f29acf47e1))
+* **arborist:** when replacing a Link with a Node, make sure to remove the Link target from the root ([3d96494](https://github.com/OmriBarZik/cli/commit/3d964940f410052918e37a9b05818fe9dc4cd86a))
+* create links relative to the target ([1e84102](https://github.com/OmriBarZik/cli/commit/1e841029917817556207c39d25be1ea91e2959e7))
+* inline single-use functions ([ea5e3a3](https://github.com/OmriBarZik/cli/commit/ea5e3a319a7c1b5f7f2a66284227a34b79b2c831))
+* linting ([bd2ae5d](https://github.com/OmriBarZik/cli/commit/bd2ae5d79eb8807bfca6075e98432c545a9ededa))
+* make sure we loadOverrides on the root node in loadVirtual() ([99d8845](https://github.com/OmriBarZik/cli/commit/99d88454248f950b82652b592fe2b4d019c1060b))
+* only call npmlog progress methods if explicitly requested ([#4644](https://github.com/OmriBarZik/cli/issues/4644)) ([668ec7f](https://github.com/OmriBarZik/cli/commit/668ec7f33b7a76f5e86a59f7e5a6c0e068a242b1)), closes [#3314](https://github.com/OmriBarZik/cli/issues/3314)
+* **query:** tell arborist to load an actual tree, not a virtual one ([9078e27](https://github.com/OmriBarZik/cli/commit/9078e27cef0233d6fc81e0ca824a34fd7685d93c))
+* replace deprecated String.prototype.substr() ([#4667](https://github.com/OmriBarZik/cli/issues/4667)) ([e3da5df](https://github.com/OmriBarZik/cli/commit/e3da5df4152fbe547f7871547165328e1bf06262))
+* update `index.js` spelling error in comment ([#5329](https://github.com/OmriBarZik/cli/issues/5329)) ([645c680](https://github.com/OmriBarZik/cli/commit/645c6804c09014b96c2d1eff191b174d12a2b7c0))
+* update readme badges ([#4658](https://github.com/OmriBarZik/cli/issues/4658)) ([2829cb2](https://github.com/OmriBarZik/cli/commit/2829cb28a432b5ff7beeeb3bf3e7e2e174c1121d))
+
+
+### Dependencies
+
+* @npmcli/arborist@5.0.4 ([679e569](https://github.com/OmriBarZik/cli/commit/679e569d5778aef312b37c1ba3bda0171366c9fb))
+* @npmcli/arborist@5.0.5 ([c70232c](https://github.com/OmriBarZik/cli/commit/c70232cc12fd9b3b024c2c759edd708af2367b8d))
+* @npmcli/arborist@5.0.6 ([42dc0b0](https://github.com/OmriBarZik/cli/commit/42dc0b03d60dc27602dab26a2f8cbfc17bf4ab40))
+* @npmcli/arborist@5.1.1 ([36899d1](https://github.com/OmriBarZik/cli/commit/36899d193b8e8ee6019b04aa5e6a3a9a641a3172))
+* @npmcli/arborist@5.2.0 ([f9984e6](https://github.com/OmriBarZik/cli/commit/f9984e64e714937fa69f14850a1d3ed7ccfc934c))
+* @npmcli/arborist@5.2.1 ([180a7e4](https://github.com/OmriBarZik/cli/commit/180a7e4647ded3d3bca5cd9a2fa8d264b7d2104a))
+* @npmcli/arborist@5.2.2 ([1ab9776](https://github.com/OmriBarZik/cli/commit/1ab9776b5db12d2fd14bf379ce0ae715a49a68fa))
+* @npmcli/arborist@5.2.3 ([0a6664d](https://github.com/OmriBarZik/cli/commit/0a6664d285b300f26764efaa2798a5b6045b95a1))
+* @npmcli/arborist@5.3.0 ([cb0db7c](https://github.com/OmriBarZik/cli/commit/cb0db7c3fd1d0a4c30db9f44e9ea9e69ec327fe8))
+* @npmcli/arborist@5.3.1 ([3bbb293](https://github.com/OmriBarZik/cli/commit/3bbb2931d09df66186108760353b2992171b057f))
+* @npmcli/arborist@5.4.0 ([c650a29](https://github.com/OmriBarZik/cli/commit/c650a29a664aa303d8b8761dcf50236baf4bb4ca))
+* @npmcli/arborist@5.6.0 ([41d0f51](https://github.com/OmriBarZik/cli/commit/41d0f51c34b24659d080beff0d53905975d34213))
+* @npmcli/eslint-config@3.1.0 ([8ab12dc](https://github.com/OmriBarZik/cli/commit/8ab12dc32b26db770b868cf694cedab38f4e7460))
+* @npmcli/map-workspaces@2.0.3 ([3f2b24a](https://github.com/OmriBarZik/cli/commit/3f2b24afe205547dbbadf5a6313e95f6b565fb49))
+* @npmcli/move-file@2.0.0 ([e9b25cd](https://github.com/OmriBarZik/cli/commit/e9b25cd66bef17e807a84e7b10384f5f4d0064b7))
+* @npmcli/node-gyp@2.0.0 ([0e87cac](https://github.com/OmriBarZik/cli/commit/0e87cac8b6f09692f6bd1bf086aadbe323d127b5))
+* @npmcli/package-json@2.0.0 ([4a9a705](https://github.com/OmriBarZik/cli/commit/4a9a705de6992a3e9eefecc6c0cf8da45a527c7a))
+* @npmcli/query@1.1.1 ([#5247](https://github.com/OmriBarZik/cli/issues/5247)) ([d55007d](https://github.com/OmriBarZik/cli/commit/d55007d9c535b17612a07a7a58cb6be94eedf77a))
+* @npmcli/query@1.2.0 ([26d2e55](https://github.com/OmriBarZik/cli/commit/26d2e551b250972caa550d56127810648a1663a1))
+* @npmcli/run-script@4.1.0 ([2c06cee](https://github.com/OmriBarZik/cli/commit/2c06ceee82dd813c0ae84cc0b09e6941cfc5533e))
+* @npmcli/run-script@4.1.3 ([#5064](https://github.com/OmriBarZik/cli/issues/5064)) ([f59a114](https://github.com/OmriBarZik/cli/commit/f59a114ffe3d1f86ccb2e52a4432292ab76852cc))
+* @npmcli/template-oss@3.2.1 ([aac01b8](https://github.com/OmriBarZik/cli/commit/aac01b89caf6336a2eb34d696296303cdadd5c08))
+* @npmcli/template-oss@3.2.2 ([#4639](https://github.com/OmriBarZik/cli/issues/4639)) ([a59fd2c](https://github.com/OmriBarZik/cli/commit/a59fd2cb863245fce56f96c90ac854e62c5c4d6f))
+* bin-links@3.0.3 ([7fbf6f7](https://github.com/OmriBarZik/cli/commit/7fbf6f7825f76906ecdec79ab15595f9e2f7b784))
+* cacache@16.0.6 ([532883f](https://github.com/OmriBarZik/cli/commit/532883ffc35fc1cc9aec09f03bf5ee0f256b94a4))
+* cacache@16.1.3 ([a79ee00](https://github.com/OmriBarZik/cli/commit/a79ee00b530b765ed219e81de77c37057c373adf))
+* hosted-git-info@5.1.0 ([2c4e387](https://github.com/OmriBarZik/cli/commit/2c4e38728f25fd32624df2eb5bbf61c2c40c8ad5))
+* nopt@6.0.0 ([7f31b85](https://github.com/OmriBarZik/cli/commit/7f31b85db650c7a2b3b0577840251f5e25e63a01))
+* npm-install-checks@5.0.0 ([ad99360](https://github.com/OmriBarZik/cli/commit/ad9936063f20829eb9d5358d056593883f17a57b))
+* npm-pick-manifest@7.0.2 ([b12ac01](https://github.com/OmriBarZik/cli/commit/b12ac013226b7d86b5b1847d58eabbac2846b153))
+* npmlog@6.0.2 ([5e31322](https://github.com/OmriBarZik/cli/commit/5e313223100db1207818d756b081eaba3468b273))
+* pacote@13.6.1 ([2e50cb8](https://github.com/OmriBarZik/cli/commit/2e50cb83e84cf25fee93ba0ca5a0343fbdb33c41))
+* semver@7.3.7 ([c51e553](https://github.com/OmriBarZik/cli/commit/c51e553a32315e4f1b703ca9030eb7ade91d1a85))
+* ssri@9.0.0 ([a2781a3](https://github.com/OmriBarZik/cli/commit/a2781a367d62328d7f870de878f1b63d66593f4f))
+* treeverse@2.0.0 ([1a90b9e](https://github.com/OmriBarZik/cli/commit/1a90b9e9ebe98cce83591e11312aaf41c830f835))
+* unique-filename@2.0.1 ([1286f03](https://github.com/OmriBarZik/cli/commit/1286f03fe73dee9a447b13b662f0c5622ab6ec9e))
+
 ## [5.6.0](https://github.com/npm/cli/compare/arborist-v5.5.0...arborist-v5.6.0) (2022-08-17)
 
 
